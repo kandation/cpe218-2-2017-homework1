@@ -51,6 +51,12 @@ public class ProgramGUIA extends JPanel implements TreeSelectionListener {
 
         JScrollPane htmlView = new JScrollPane(htmlPane);
 
+        // Start Page
+        htmlPane.setText("Binary Tree Calculator\nThis is th help file for the Binary Tree Calculator, HW7.5 of CPE205 course." +
+                "\nSelecting any node in the tree will show the order and the result of the corresponding computation" +
+                "\n\nThis program is based on the \"How to use Trees\" in the java tutorial, from " +
+                "http://download.oracle.com/javase/tutorial/uiswing/components/tree.html");
+
         //Add the scroll panes to a split pane.
         JSplitPane splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT);
         splitPane.setTopComponent(treeView);
