@@ -1,0 +1,53 @@
+
+
+	/*public static void inorderTravel(Node n){
+		if(n == null){
+			return;
+		}
+
+		Stack<Node> stack = new Stack<Node>();
+		Node tmpNode = n;
+		while (tmpNode != null){
+			stack.push(tmpNode);
+			tmpNode = tmpNode.right;
+		}
+
+		while (stack.size() > 0){
+			tmpNode = stack.pop();
+			System.out.print(tmpNode.getValue());
+			if (tmpNode.left != null){
+				tmpNode = tmpNode.left;
+				while (tmpNode != null){
+					stack.push(tmpNode);
+					tmpNode = tmpNode.right;
+				}
+			}
+		}
+	}*/
+
+
+
+
+	/*public static String interPreorder(Node n){
+		if(n != null){
+			String tmpString = "";
+
+			Stack<Node> ns = new Stack<Node>();
+			ns.push(n);
+
+			while (!ns.empty()){
+				Node mn = ns.peek();
+				tmpString += mn.getValue();
+				ns.pop();
+				if (mn.right != null){
+					ns.push(mn.right);
+				}
+				if (mn.left != null){
+					ns.push(mn.left);
+				}
+			}
+
+			return new StringBuilder(tmpString).reverse().toString();
+		}return "";
+
+	}*/

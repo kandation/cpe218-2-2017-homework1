@@ -1,13 +1,16 @@
-public class Node {
-    String value;
-    Node left, right;
+package components;
 
-    public Node(String key){
+public class MyNode {
+    String value;
+    public MyNode left, right;
+
+
+    public MyNode(String key){
         value = key;
         left = right = null;
     }
 
-    public Node(Node left, String key, Node right){
+    public MyNode(MyNode left, String key, MyNode right){
         this.value = key;
         this.left = left;
         this.right = right;
@@ -22,6 +25,10 @@ public class Node {
         if( op.indexOf(value) == -1){
             return Integer.parseInt(this.value);
         }return 0;
+    }
+
+    public String toString() {
+        return value;
     }
 
 
